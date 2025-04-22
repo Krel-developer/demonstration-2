@@ -1,0 +1,46 @@
+.krel_services__item
+  padding-right: 76px 
+  position: relative
+  padding-left: 40px
+  padding-bottom: 25px
+  display: flex 
+  align-items: flex-end
+  font-size: 18px
+  line-height: 180%
+  background: #E6E5EB
+  transition: 0.4s
+  &:after 
+    position: absolute
+    bottom: 16px
+    right: 16px
+    content: ''
+    display: block
+    width: 44px
+    height: 44px
+    background: url('../img/krel_services__item.svg')
+
+
+.krel_services__item_active   
+  background: #309C93
+
+
+  color: #fff
+  &:after 
+
+    background: url('../img/krel_services__item_active.svg') 
+
+
+
+@media screen and (max-width: 1719px)
+  .krel_services__item
+    padding: 25px
+    font-size: 15px
+
+@media screen and (max-width: 1439px)
+  .krel_services__item
+
+    &:after 
+      top: 15px
+      right: 15px
+      bottom: auto
+      

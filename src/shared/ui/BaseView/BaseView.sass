@@ -1,0 +1,89 @@
+.boocking__item 
+  position: relative
+  width: calc((100% - 30px) / 3)
+  border-radius: 30px 
+  height: 834px
+  padding: 27px 40px 35px 30px
+  background: #fff
+  display: flex 
+  flex-direction: column
+  overflow: hidden
+
+.boocking__item__title  
+  font-size: 24px
+  line-height: 31px
+  color:  #333333
+  margin-bottom: 22px
+  font-weight: 600
+
+  span
+    color: #939393
+    display: block
+    font-size: 15px
+    line-height: 27px
+    font-weight: 400
+
+.boocking__item_laoding
+  position: relative
+  overflow: hidden
+  &::after
+    position: absolute
+    content: ''
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: rgba(255, 255, 255, 0.7) url('../img/preloader.gif')
+    // background: rgba(242, 251, 249, 0.7) url('../preloader.gif')
+    background-repeat: no-repeat
+    background-position: center
+    z-index: 10000
+
+
+
+.boocking__item_completed
+  position: relative
+  overflow: hidden
+  &::after
+    position: absolute
+    content: ''
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: rgba(255, 255, 255, 0.7) 
+    // background: rgba(242, 251, 249, 0.7) url('../preloader.gif')
+    background-repeat: no-repeat
+    background-position: center
+    z-index: 10000
+    cursor: not-allowed
+
+
+@media screen and (max-width: 1719px)
+  .boocking__item 
+    height: 779px
+    padding: 27px 20px 35px 30px
+
+    
+@media screen and (max-width: 1199px)
+  .boocking__item__title
+    font-size: 20px
+
+@media screen and (max-width: 991px)
+  .boocking__item 
+    width: 100%
+    max-width: 500px
+    position: absolute 
+    top: 0
+    left: 50% 
+    transform: translateX(-50%)
+    opacity: 0
+    transition: opacity 0.4s
+    z-index: -1 
+    height: auto  
+
+  .boocking__item_active
+    opacity: 1
+    z-index: 3
+    position: relative
+  

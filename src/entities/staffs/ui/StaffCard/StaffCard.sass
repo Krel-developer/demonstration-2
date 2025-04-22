@@ -1,0 +1,71 @@
+.krel_staffs__item
+  padding: 15px
+  display: flex
+  height: 179px
+  transition: 0.4s
+
+
+.krel_staffs__item__left
+  width: 207px 
+  height: 149px
+  background: #E6E5EB
+  border-radius: 30px 
+  overflow: hidden
+  margin-right: 18px
+  color: #656565
+  position: relative
+
+  img 
+    width: 100%
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translateY(-50%)
+
+
+
+
+.krel_staffs__item__right
+  flex: 1 
+  font: 12px
+  line-height: 18px
+  
+
+  h3 
+    font-size: 18px
+    line-height: 24px
+    color:  #333333
+    margin-bottom: 10px
+
+.krel_staffs__item_active
+  background: #309C93
+  color: #fff
+  h3
+    color: #fff
+
+@media screen and (max-width: 1719px)
+  .krel_staffs__item
+    height: 158px
+  .krel_staffs__item__left
+    width: 152px
+    height: 118px
+
+  .krel_staffs__item__right
+    h3 
+      font-size: 15px  
+
+
+@media screen and (max-width: 1439px)
+  .krel_staffs__item
+    height: auto
+    padding: 15px
+    padding-bottom: 22px
+    display: block
+  .krel_staffs__item__left
+    height: 149px 
+    width: 100%
+
+  .krel_staffs__item__right
+    h3
+      font-size: 20px  
+      margin-top: 15px

@@ -1,0 +1,32 @@
+@use  "@/shared/assets/style/mixins/_scrollbar" as m
+  
+.boocking__item__list
+  flex: 1
+  overflow-y: auto
+  padding-right: 40px
+  padding-top: 65px
+  @include m.scrollbars(5px, #309C93, #F9F9F9, 5px) 
+
+
+.boocking__item__list__item
+  border-radius: 30px
+  height: 176px
+  overflow: hidden 
+  margin-bottom: 15px
+  
+  cursor: pointer
+  color: #333
+@media screen and (max-width: 1719px)
+  .boocking__item__list
+    padding-right: 25px  
+
+@media screen and (max-width: 1439px)
+  .boocking__item__list
+    padding-right: 20px
+
+@media screen and (max-width: 991px)
+
+  .boocking__item__list
+    flex: auto
+    height: 539px  
+  

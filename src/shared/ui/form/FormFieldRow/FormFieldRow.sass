@@ -1,0 +1,46 @@
+.boocking__item__field
+  margin-bottom: 22px
+  input, select 
+    padding: 14.5px 20px 
+    border-radius: 10px
+    background: #F9F9F9
+    border: none
+    width: 100%
+    font-size: 15px
+    line-height: 27px
+
+
+.boocking__select__cont
+  position: relative
+  select 
+    -webkit-appearance: none
+  &:before 
+    content: ''
+    width: 24px
+    height: 24px
+    display: block
+    background: url('../img/select_icon.svg')  
+    top: 16px
+    right: 20px
+    position: absolute
+
+
+.select_disabled
+  // pointer-events: none
+  opacity: 0.4
+  cursor: not-allowed
+
+
+.boocking__item__field__title
+  font-size: 20px
+  line-height: 26px
+  color: #333333
+  font-weight: 600
+  margin-bottom: 22px
+
+@media screen and (max-width: 1199px)
+  .boocking__item__title
+    font-size: 20px
+  .boocking__item__field__title
+    font-size: 18px
+    
