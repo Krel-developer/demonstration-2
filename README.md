@@ -1,5 +1,11 @@
-# Vue 3 + TypeScript + Vite
+# Код для демонстрации
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Данный репозиторий создан не для распространения, а для демонстрации(он не запуcтится, так как не имеет необходимых Api токенов). Он явлется вторым из серии и его нужно смотреть вкупе со [первым репозиторием](https://github.com/Krel-developer/demonstration-1), задача этой серии показать перевод приложения на новый стек.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+# Задача приложения
+
+Трех-шаговая онлайн запись на базе yclient api, [демонстрации работы](http://onkoplus/onlajn-zapis/?staff_id=3519244), присутсвует предвыбор комбинаций на базе параметров ссылки
+
+# Технологии
+
+Vite + vue3(Composition - подход) + pinia + TypeScript + sass + FCD - архитектурный подход
